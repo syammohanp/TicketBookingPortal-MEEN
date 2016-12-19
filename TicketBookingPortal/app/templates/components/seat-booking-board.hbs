@@ -1,0 +1,27 @@
+<div class="seat-booking-board">	
+	<hr class="hdline" />
+	<h3 class="text-center hdscreen">IMAX screen is located this side</h3>
+	<div class="row">
+		<div class="col-md-4 text-center">
+			<p>You're currently booking {{bookedSeatCount}} seat(s)</p>
+		</div>
+		
+		<div class="col-md-4 text-center">
+			<button {{action 'onReset'}} class="btn btn-danger">Reset</button>
+		</div>
+
+		<div class="col-md-4 text-center">
+			<button {{action 'onSubmit'}} class="btn btn-primary">Submit Order</button>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<ul>
+		{{#each seats as |s|}}
+			<li>
+				<button {{action 'onBooking' s}} class="btn btn-default seat {{if s.isbooked "booked"}}">{{s.id}}</button>
+			</li>
+		{{/each}}
+		</ul>
+	</div>
+</div>

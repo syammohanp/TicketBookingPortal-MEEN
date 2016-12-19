@@ -1,0 +1,33 @@
+.container {
+
+}
+
+.btn {
+	
+}
+
+.seat-booking-board {
+
+}
+.seat-booking-board .booked {
+	background-color: lime;
+}
+
+.seat-booking-board .hdline {
+	border: 2px solid lime;
+}
+
+.seat-booking-board .hdscreen {
+	color: lime;
+}
+
+.seat-booking-board .btn.seat{
+	height: 50px;
+	width: 50px;
+}
+
+.seat-booking-board ul li {
+	list-style: none;
+	float: left;
+	margin: 2px;
+}
